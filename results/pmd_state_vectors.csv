@@ -1,0 +1,6 @@
+dataset,mechanism,module,wt_mean_log2fpkm,jimpy_mean_log2fpkm,delta_log2fpkm
+jimpy_vs_WT,misfolding_confirmed,myelin_output,2.531025871102632,4.084696650877057,1.5536707797744254
+jimpy_vs_WT,misfolding_confirmed,er_stress,4.435966363454056,4.606115939449755,0.17014957599569946
+jimpy_vs_WT,misfolding_confirmed,opc_identity,5.37212370520414,5.750386056406163,0.37826235120202334
+jimpy_vs_WT,misfolding_confirmed,apoptosis,3.693819356494684,3.8400035080219994,0.14618415152731545
+jimpy_vs_WT,misfolding_confirmed,lipid_synth,4.234653016391571,5.122483205479809,0.8878301890882376

@@ -1,0 +1,80 @@
+{
+  "genes": {
+    "myelin_output": [
+      "Mbp",
+      "Mog",
+      "Mag",
+      "Cnp",
+      "Mal",
+      "Plp1",
+      "Ugt8a",
+      "Mobp"
+    ],
+    "er_stress": [
+      "Hspa5",
+      "Ddit3",
+      "Atf4",
+      "Atf6",
+      "Xbp1",
+      "Herpud1",
+      "Eif2ak3",
+      "Dnajb9",
+      "Edem1",
+      "Pdia4",
+      "Pdia6",
+      "Hyou1",
+      "Manf",
+      "Sel1l",
+      "Derl1"
+    ],
+    "opc_identity": [
+      "Pdgfra",
+      "Cspg4",
+      "Ptprz1",
+      "Sox10",
+      "Olig1",
+      "Olig2"
+    ],
+    "apoptosis": [
+      "Casp3",
+      "Bax",
+      "Bcl2l11",
+      "Trp53",
+      "Cdkn1a"
+    ],
+    "lipid_synth": [
+      "Fdft1",
+      "Hmgcr",
+      "Sqle",
+      "Idi1",
+      "Srebf2",
+      "Cyp51"
+    ]
+  },
+  "healthy_baseline": {
+    "myelin_output": {
+      "mean": 2.6422935813714656,
+      "std": 0.3030570332737748
+    },
+    "er_stress": {
+      "mean": -0.03783771545647027,
+      "std": 0.15301232410621898
+    },
+    "opc_identity": {
+      "mean": -0.052948363121999575,
+      "std": 0.26253216192090223
+    },
+    "apoptosis": {
+      "mean": -0.01886549135649231,
+      "std": 0.14500435737522316
+    },
+    "lipid_synth": {
+      "mean": 0.22395281313099769,
+      "std": 0.48860473939264637
+    },
+    "maturation": {
+      "mean": 0.4359387457370758,
+      "std": 0.03429051488637924
+    }
+  }
+}

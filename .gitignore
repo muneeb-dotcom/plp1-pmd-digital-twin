@@ -1,0 +1,7 @@
+# Large raw/intermediate data - regenerable from scripts
+data/reference/*.h5ad
+data/reference/*.gz
+data/reference/*.tab.gz
+data/reference/human/
+data/reference/series_matrix.txt
+results/*.h5ad

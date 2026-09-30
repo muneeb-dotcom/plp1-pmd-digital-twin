@@ -1,66 +1,30 @@
-\# PLP1/PMD Digital Twin (Module A)
+# PLP1/PMD Digital Twin (Module A)
 
-
-
-Mechanism-to-phenotype model for PLP1 variants. Builds a mouse
-
-oligodendrocyte-lineage reference atlas (Marques et al. 2016),
-
-defines interpretable cell-state modules, and reports measured
-
-disease-state shifts relative to a healthy baseline.
-
-
+Mechanism-to-phenotype model for PLP1 variants. Builds a mouse oligodendrocyte-lineage reference atlas (Marques et al. 2016), defines interpretable cell-state modules, and reports measured disease-state shifts relative to a healthy baseline.
 
 Part of the extended PLP1/PMD project:
 
-\- Part 1: https://github.com/muneeb-dotcom/plp1-pmd-mechanism-mapping
+- Part 1: [plp1-pmd-mechanism-mapping](https://github.com/muneeb-dotcom/plp1-pmd-mechanism-mapping)
+- Module B (therapeutic design): [module-b-therapeutics](https://github.com/muneeb-dotcom/plp1-pmd-mechanism-mapping/tree/main/module-b-therapeutics)
+- Module C (validation): [module-c-validation](https://github.com/muneeb-dotcom/plp1-pmd-mechanism-mapping/tree/main/module-c-validation)
 
-\- Module B: (therapeutic design)
+## Honest scope
 
-\- Module C: https://github.com/muneeb-dotcom/plp1-pmd-validation
+This is **not** a mechanistic simulation. It reports measured module scores from real reference and disease data. It does not extrapolate to mechanism classes with no available data (see `results/severity_analysis.md`).
 
+## Structure
 
+- `scripts/`: pipeline, phases A1-A8 (see filenames a01-a18)
+- `twin/pmd_twin.py`: the packaged, callable twin
+- `results/`: module definitions, state vectors, analysis writeups
+- `figures/`: atlas UMAP, marker validation, maturation axis
 
-\## Honest scope
+## Key findings
 
-NOT a mechanistic simulation. Reports measured module scores from
+- Reference atlas validated against canonical oligodendrocyte markers (Pdgfra, Mog, Plp1)
+- Mouse-derived modules validated on independent human data (GSE118257)
+- Cross-mechanism expression data unavailable for loss-of-function and duplication variants (see `results/severity_analysis.md`), so the twin reports `no_measured_data` rather than extrapolating
 
-real reference/disease data. Does not extrapolate to mechanism
+## Reproduce
 
-classes with no available data (see results/severity\_analysis.md).
-
-
-
-\## Structure
-
-\- `scripts/` — pipeline, phases A1-A8 (see filenames a01-a18)
-
-\- `twin/pmd\_twin.py` — the packaged, callable twin
-
-\- `results/` — module definitions, state vectors, analysis writeups
-
-\- `figures/` — atlas UMAP, marker validation, maturation axis
-
-
-
-\## Key findings
-
-\- Reference atlas validated against canonical OL markers (Pdgfra, Mog, Plp1)
-
-\- Mouse-derived modules validated on independent human data (GSE118257)
-
-\- Cross-mechanism expression data unavailable for LOF/duplication (see
-
-&#x20; results/severity\_analysis.md) — twin honestly reports "no\_measured\_data"
-
-&#x20; rather than extrapolating
-
-
-
-\## Reproduce
-
-Large data files are gitignored (regenerable via scripts/a01-a03,
-
-\~2GB). See scripts in order a01 through a18.
-
+Large data files are gitignored (~2 GB) and can be regenerated with `scripts/a01` to `scripts/a03`. Run the scripts in order, a01 through a18.
